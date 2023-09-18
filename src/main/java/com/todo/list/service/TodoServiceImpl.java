@@ -40,7 +40,9 @@ public class TodoServiceImpl implements TodoService{
     @Override
     public TodoDTO createTodo(TodoDTO todoDTO) {
         Todo todo = todoMapper.todoDTOToTodo(todoDTO);
-        todo = todoRepository.save(todo);
+        if (todo != null){
+            todo = todoRepository.save(todo);
+        }
         return todoMapper.todoToTodoDTO(todo);
     }
 

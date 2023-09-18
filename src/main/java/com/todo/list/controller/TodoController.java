@@ -48,7 +48,7 @@ public class TodoController {
     @GetMapping("/{id}")
     public ResponseEntity<RemoteResponse> getTodoById(@PathVariable Long id) {
         TodoDTO todo = todoService.getTodoById(id).orElseThrow(() -> new EntityNotFoundException(ENTITY_NOT_FOUND.name(), "List was not found"));
-        RemoteResponse successfulResponse = RemoteResponse.create(true, OK.name(), "List was found successfully", null);
+        RemoteResponse successfulResponse = RemoteResponse.create(true, OK.name(), "List was found successfully", List.of(todo));
         return ResponseEntity.status(HttpStatus.OK).body(successfulResponse);
     }
 
