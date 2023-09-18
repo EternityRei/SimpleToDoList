@@ -53,3 +53,25 @@ Before running the application, make sure you have the following prerequisites i
 
 You can use a tool like Postman to interact with the API endpoints and manage your todo items.
 
+###  Feedback
+
+- Was it easy to complete the task using AI? 
+
+That was much more easier to compelete the task using AI, because it can generate for you some drafts, templates you can use and do some routine work instead of you.
+
+- How long did task take you to complete?
+
+Almost 4 hours
+
+- Was the code ready to run after generation? What did you have to change to make it usable?
+
+To tell the truth, sometimes generated code was not perfect (some bad practices were proposed) and caused some problems with running. Actually, the code usually needed a structure changing, but sometimes I had to used my acknowledge to correct ChatGPT's mistakes.
+
+- Which challenges did you face during completion of the task?
+
+The main challenges were connected with analyzing Chat's answers and trying to find a better solution to complete the task
+
+-  Which specific prompts you learned as a good practice to complete the task?
+
+1. Framework configuration
+2. Unit testing
